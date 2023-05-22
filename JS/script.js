@@ -4,20 +4,20 @@ const myWord = prompt("Scrivi una parola e ti dirò se la parola scritta è pali
 const result = reverseString(myWord);
 // programma per cambiare l'ordine alla stringa 
 
-function reverseString(str) {
+function reverseString() {
 
     // stringa vuota
-    
-    let newString = "";
 
-    for (let i = str.length - 1; i >= 0; i--) {
+    let myNewWord = "";
 
-        newString += str[i];
+    for (let i = myWord.length - 1; i >= 0; i--) {
+
+        myNewWord += myWord[i];
         
-        console.log(newString);
+        console.log(myNewWord);
     }
 
-    return newString;
+    return myNewWord;
 }
 
 
