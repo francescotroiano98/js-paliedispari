@@ -1,3 +1,4 @@
+/*
 // prendere l'input 
 const myWord = prompt("Scrivi una parola e ti dirò se la parola scritta è palindroma");
     
@@ -28,7 +29,7 @@ if (result === myWord) {
 
     alert("Non è PALINDROMA");
 }
-
+*/
 // PARI E DISPARI
 
 
@@ -40,13 +41,28 @@ const askEvenOddnumber = parseInt(prompt("Scegli, scrivi paro o disparo"));
 
 const userNumber = parseInt(prompt("Scrvi un numero da 1 a 5"));
 
+console.log(userNumber);
+
 const computerNumber = Math.floor(Math.random() * 5 + 1);
+
+console.log(computerNumber);
 
 let sum = 0;
 
-function isItEvenOrOdd (){
-    
-    
+if (askEvenOddnumber % 2 === 0){
+    askEvenOddnumber = listEvenNumbers;
+    console.log(askEvenOddnumber)
 }
 
+function isItEvenOrOdd (){
+    
+    sum = userNumber + computerNumber;
+    console.log(userNumber);
+    console.log(computerNumber);
+
+    if (sum % 2 === 0 && sum === listEvenNumbers);
+        alert("Hai vinto");
+        console.log(sum);
+       
+}
 
