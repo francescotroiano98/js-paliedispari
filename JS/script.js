@@ -29,3 +29,24 @@ if (result === myWord) {
     alert("Non è PALINDROMA");
 }
 
+// PARI E DISPARI
+
+
+const listEvenNumbers = [2, 4, 6, 8, 10];
+
+const listOddNumbers = [3, 5, 7, 9];
+
+const askEvenOddnumber = parseInt(prompt("Scegli, scrivi paro o disparo"));
+
+const userNumber = parseInt(prompt("Scrvi un numero da 1 a 5"));
+
+const computerNumber = Math.floor(Math.random() * 5 + 1);
+
+let sum = 0;
+
+function isItEvenOrOdd (){
+    
+    
+}
+
+
