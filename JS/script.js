@@ -33,36 +33,30 @@ if (result === myWord) {
 // PARI E DISPARI
 
 
-const listEvenNumbers = [2, 4, 6, 8, 10];
 
-const listOddNumbers = [3, 5, 7, 9];
 
-const askEvenOddnumber = parseInt(prompt("Scegli, scrivi paro o disparo"));
+let chooseEvenOdd = prompt("scrivi paro o disparo");
+console.log(chooseEvenOdd);
 
-const userNumber = parseInt(prompt("Scrvi un numero da 1 a 5"));
 
+const userNumber = parseInt(prompt("Scrivi un numero da 1 a 5"));
 console.log(userNumber);
 
-const computerNumber = Math.floor(Math.random() * 5 + 1);
-
+let computerNumber = Math.floor(Math.random() * 5) + 1;
 console.log(computerNumber);
 
-let sum = 0;
+sum = parseInt(userNumber + computerNumber);
+console.log(sum);
 
-if (askEvenOddnumber % 2 === 0){
-    askEvenOddnumber = listEvenNumbers;
-    console.log(askEvenOddnumber)
+let result = 0;
+function isItEvenOrOdd () {
+
+    if ((sum % 2 === 0 && chooseEvenOdd === "paro") || (sum % 2 !== 0 && chooseEvenOdd === "disparo")) {
+        alert("HAI VINTO");
+        return true;
+    } else {
+        alert("HAI PERSO");
+        return false;
+    }
 }
-
-function isItEvenOrOdd (){
-    
-    sum = userNumber + computerNumber;
-    console.log(userNumber);
-    console.log(computerNumber);
-
-    if (sum % 2 === 0 && sum === listEvenNumbers);
-        alert("Hai vinto");
-        console.log(sum);
-       
-}
-
+result = isItEvenOrOdd();
