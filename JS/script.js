@@ -1,4 +1,4 @@
-/*
+
 // prendere l'input 
 const myWord = prompt("Scrivi una parola e ti dirò se la parola scritta è palindroma");
     
@@ -29,7 +29,7 @@ if (result === myWord) {
 
     alert("Non è PALINDROMA");
 }
-*/
+
 // PARI E DISPARI
 
 
@@ -48,7 +48,7 @@ console.log(computerNumber);
 sum = parseInt(userNumber + computerNumber);
 console.log(sum);
 
-let result = 0;
+let resultEvenOdd = 0;
 function isItEvenOrOdd () {
 
     if ((sum % 2 === 0 && chooseEvenOdd === "paro") || (sum % 2 !== 0 && chooseEvenOdd === "disparo")) {
@@ -59,4 +59,5 @@ function isItEvenOrOdd () {
         return false;
     }
 }
-result = isItEvenOrOdd();
+resultEvenOdd = isItEvenOrOdd();
+
