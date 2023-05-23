@@ -22,10 +22,10 @@ function reverseString() {
 }
 
 
-if (result === myWord) {
+if (result.toLowerCase === myWord.toLowerCase) {
     alert("la parola inserita è PALINDROMA");
 
-} else if (result != myWord){
+} else if (result.toLowerCase != myWord.toLowerCase){
 
     alert("Non è PALINDROMA");
 }
